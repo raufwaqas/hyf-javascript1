@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #111;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 900px;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+
+.text {
+    position: relative;
+    z-index: 10;
+}
+
+.text h2 {
+    font-size: 5em;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text h6 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #444444;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text p {
+    font-size: 1.1em;
+    color: #fff;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.text a {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #111;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+.text a:hover {
+    letter-spacing: 6px;
+}
+
+.chr {
+    height: 900px;
+    background-color: #111;
+
+}
+
+#characters {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 50px;
+    justify-content: center;
+}
+
+.artist {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 370px;
+    /* height: 400px !important; */
+    padding: 15px !important;
+}
+
+.title-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.pic .bild {
+    width: 350px;
+    height: 430px;
+
+}
+
+.title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.status {
+    border: 2px solid green;
+    color: green;
+    padding: 5px 10px;
+    line-height: 1;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+
+.lowe-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.des {
+    color: #888888;
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+@media (max-width: 991px) {
+
+    .showcase,
+    .showcase header {
+        padding: 40px;
+    }
+
+    .text h2 {
+        font-size: 3em;
+    }
+
+    .text h3 {
+        font-size: 2em;
+    }
+}
